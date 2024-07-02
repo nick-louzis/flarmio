@@ -24,7 +24,7 @@
 
         document.getElementById('myform').addEventListener('submit', function(event) {
             const numberInput = document.getElementById('number').value;
-            if (numberInput <= 10) {
+            if (numberInput <= 10 || isNaN(numberInput)) {
                 alert('Please enter a number greater than 10.');
                 event.preventDefault();
             } else{
